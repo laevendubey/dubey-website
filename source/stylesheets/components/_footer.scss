@@ -1,0 +1,42 @@
+.footer {
+  background: $gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  color: rgba(0,0,0,0.3);
+  margin: 0;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: $black !important;
+  opacity: 0.6;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-copyright {
+  padding-top: 15px;
+  display: flex;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .footer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,71 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  padding: 5px;
+}
+
+.banner h1, .banner p {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner h1 {
+  font-size: 45px;
+}
+
+.banner p {
+  opacity: .9;
+  font-size: 25px;
+}
+
+.banner .main-container {
+  display: flex;
+  min-height: 350px;
+}
+
+/* --- Banner layout avec le text central --- */
+.banner .banner-content-center, .banner .banner-content-home {
+  justify-content: center;
+}
+
+.content-home {
+  padding: 60px;
+  padding-bottom: 100px;
+  max-width: 900px;
+  text-align: center;
+}
+
+.content-home h1 {
+  font-size: 60px;
+}
+
+.content-center {
+  text-align: center;
+  align-self: center;
+}
+
+/* --- Banner layout avec un bloc de texte à gauche ou à droite --- */
+.banner .banner-content-left {
+  justify-content: flex-start;
+}
+
+.content-left {
+  align-self: center;
+  max-width: 600px;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .banner {
+    min-height: 230px;
+  }
+  .banner .main-container {
+    min-height: 230px;
+  }
+  .content-home {
+    padding: 18px;
+    padding-bottom: 100px;
+  }
+}

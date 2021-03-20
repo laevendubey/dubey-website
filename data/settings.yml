@@ -1,0 +1,16 @@
+site:
+  title: Dubey Peinture
+  description: "Description du site"
+  keywords: "peinture, peintre, suisse, CH, Vaud, Penthalaz, Dubey, rénovation"
+
+author:
+  name: Laeven Dubey
+  company: Dubey Peinture
+  address: Le cheminet 28, 1305 Penthalaz
+  phone: 076 387 78 21
+  email: l.dubey@dubey-peinture.ch
+
+social:
+  instagram: "https://www.instagram.com/dubey_peinture"
+  facebook: "https://facebook.com/ID"
+  linkedin: "https://www.linkedin.com/laeven-dubey-8293ab143"

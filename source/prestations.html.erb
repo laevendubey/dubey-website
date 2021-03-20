@@ -1,0 +1,35 @@
+---
+id: prestations
+title: Dubey - Prestations
+banner_picture: my_banner.jpg
+banner_title: Prestations
+banner_layout: content-center
+banner_gradient: linear-gradient(to right, rgba(0,0,0,0.6),rgba(0,0,0,0)),
+banner_margin : margin-bottom
+---
+
+<div class="main-container padding-bottom">
+  <h2 class="padding-bottom">Nos prestations</h2>
+  <div class="cards">
+    <% data.prestations.each do |f, prestation| %>
+      <div class="card-verti background-white">
+        <div>
+          <%= image_tag prestation.picture %>
+        </div>
+        <div class="card-verti-infos">
+          <h3><%= prestation.titre %></h3>
+          <p><%= prestation.description %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="ruban ruban-light-blue">
+  <div class="main-container form-jnw">
+    <h2>Demande de devis</h2>
+    <p>Contactez-nous pour demander un devis.</p>
+    <%= partial "/layouts/partials/_form-contact.html.erb" %>
+  </div>
+</div>
+

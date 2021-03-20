@@ -1,0 +1,27 @@
+/* --- texte encadré --- */
+.highlighted-black, .highlighted-yellow {
+  padding: 2px 15px 4px;
+  border-radius: 1px;
+  display: inline;
+}
+
+.highlighted-black {
+  color: white;
+  background: $black;
+}
+
+.highlighted-yellow {
+  color: white;
+  background: $dark-yellow;
+}
+
+/* --- texte souligné --- */
+.underline, .underline-yellow {
+  border-bottom: 0.25em solid $black;
+  display: inline;
+  line-height: 1.5;
+}
+
+.underline-yellow {
+  border-bottom: 0.25em solid $yellow;
+}

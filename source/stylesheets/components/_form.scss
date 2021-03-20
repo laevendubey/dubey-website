@@ -1,0 +1,11 @@
+.form-jnw {
+  padding: 0 100px;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .form-jnw {
+    padding: 0;
+  }
+}

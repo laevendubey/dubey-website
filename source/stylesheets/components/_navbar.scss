@@ -1,0 +1,32 @@
+.navbar-background-white {
+  background: white;
+}
+
+.navbar-jnw {
+  justify-content: space-between !important;
+  font-weight: bolder;
+}
+
+.navbar-jnw .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-jnw .navbar-brand img {
+  width: 80px;
+}
+
+.navbar-jnw .active-jnw {
+  border-bottom: 10px solid $blue;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .navbar-jnw {
+    text-align: right;
+  }
+  .navbar-jnw .active-jnw {
+    border-bottom: none;
+
+  }
+}

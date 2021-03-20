@@ -1,0 +1,20 @@
+.video-jnw {
+  border: none;
+  height: 400px;
+  display:block;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .video-jnw {
+    height: 500px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .video-jnw {
+    height: 400px;
+  }
+}
+

@@ -1,0 +1,22 @@
+.frame-blue, .frame-yellow, .frame-black {
+  margin: 30px auto;
+  transform: rotate(5deg);
+  display: table-cell;
+  padding: 2px;
+}
+
+.frame-blue {
+  background: $blue;
+}
+
+.frame-yellow {
+  background: $yellow;
+}
+
+.frame-black {
+  background: $black;
+}
+
+.img-framed {
+  transform: rotate(-5deg);
+}

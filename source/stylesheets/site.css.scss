@@ -1,0 +1,123 @@
+/* --- Graphical variables --- */
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+/* --- Components --- */
+@import "components/banner.scss";
+@import "components/button.scss";
+@import "components/footer.scss";
+@import "components/navbar.scss";
+@import "components/title.scss";
+@import "components/card.scss";
+@import "components/frame.scss";
+@import "components/ruban.scss";
+@import "components/icon.scss";
+@import "components/bullet.scss";
+@import "components/video.scss";
+@import "components/link.scss";
+@import "components/form.scss";
+
+
+/* --- External Libraries --- */
+@import "bootstrap";
+
+/* --- Website main CSS --- */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: $light-gray;
+  color: $black;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 180px;
+  font-family: $body-font;
+  min-height: 100%;
+  position: relative;
+}
+.text-center {
+  text-align: center;
+}
+
+//Pour laisser un espace après une div ou un titre
+.padding-bottom {
+  padding-bottom: 30px;
+}
+
+.margin-bottom {
+  margin-bottom : 40px;
+}
+
+.main-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headers-font;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .main-container {
+    max-width: 900px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .main-container {
+    max-width: 650px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .main-container {
+    max-width: 450px;
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .display-none {
+  display: none;
+  }
+}
+

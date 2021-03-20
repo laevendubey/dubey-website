@@ -1,0 +1,111 @@
+/* --- Card call to action --- */
+.card-call {
+  margin: auto;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  top: -80px;
+}
+
+.card-call h1, .card-call h2 {
+  margin-bottom: 1rem;
+}
+
+/* --- Card vertical / horizontale (carracteristiques communes aux deux cartes) --- */
+.card-verti h2, .card-verti p, .card-hori h2, .card-hori p {
+  margin: 0;
+}
+
+.background-white {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+/* --- Card verticale --- */
+.card-verti img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-verti .card-verti-infos {
+  padding: 16px;
+}
+
+/* --- Card horizontale --- */
+.card-hori {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-hori .img-large {
+  width: 50vw;
+  max-width: 600px;
+}
+
+.card-hori img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.card-hori .card-hori-infos {
+  padding: 16px;
+}
+
+/* --- cards grid --- */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.cards-small {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ }
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .card-call {
+    max-width: 400px;
+  }
+  .card-hori {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .card-hori-right {
+    flex-direction: column-reverse;
+  }
+  .card-hori img, .card-hori .img-large {
+    height: 200px;
+    width: 100% !important;
+  }
+  .card-hori .card-hori-infos {
+    padding: 16px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .card-call {
+    max-width: 320px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cards-small {
+    grid-gap: 5px;
+  }
+}

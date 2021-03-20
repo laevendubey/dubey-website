@@ -1,0 +1,37 @@
+<div class="navbar-background-white sticky-top">
+  <div class="navbar navbar-expand-sm navbar-light main-container navbar-jnw">
+    <% link_to "/index.html", class: "navbar-brand" do %>
+      <%= image_tag "dubey-logo.png" %>
+    <% end %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- Methode ruby qui ajoute la classe active si la page concernée est active -->
+        <li class="nav-item <%=current_page.data.id == 'home' ? 'active active-jnw' : ''%>">
+          <%= link_to "ACCUEIL", "/index.html", class: "nav-link" %>
+        </li>
+        <li class="nav-item <%=current_page.data.id == 'about' ? 'active active-jnw' : ''%>">
+          <%= link_to "A PROPOS", "/about.html", class: "nav-link" %>
+        </li>
+        <li class="nav-item <%=current_page.data.id == 'prestations' ? 'active active-jnw' : ''%>">
+          <%= link_to "PRESTATIONS", "/prestations.html", class: "nav-link" %>
+        </li>
+        <li class="nav-item <%=current_page.data.id == 'references' ? 'active active-jnw' : ''%>">
+          <%= link_to "REFERENCES", "/references.html", class: "nav-link" %>
+        </li>
+<!--         <li class="nav-item <%=current_page.data.id == 'blog' ? 'active active-jnw' : ''%>">
+          <%= link_to "BLOG", "#", class: "nav-link" %>
+        </li> -->
+        <li class="nav-item <%=current_page.data.id == 'contact' ? 'active active-jnw' : ''%>">
+          <%= link_to "CONTACT", "/contact.html", class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

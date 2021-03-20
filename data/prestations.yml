@@ -1,0 +1,43 @@
+analyse:
+  titre: Analyses
+  subtitle: Analyse, réflexion et traitement des surfaces
+  description: Analyse, réflexion et traitement des surfaces.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fas fa-stethoscope"></i>
+
+peinture:
+  titre: Peintures
+  subtitle: Réalisations en intérieur et en extérieur
+  description: Réalisations en intérieur et en extérieur.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fas fa-paint-roller"></i>
+
+papiers:
+  titre: Papiers peints
+  subtitle: Poses de diverses gammes de papiers peints
+  description: Poses de diverses gammes de papiers peints.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fas fa-scroll"></i>
+
+revetements:
+  titre: Revêtements
+  subtitle: Revêtements en toiles de verre
+  description: Revêtements en toiles de verre.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fab fa-google-wallet"></i>
+
+crepi:
+  titre: Crépi
+  subtitle: Application de crépi taloché
+  description: Application de crépi taloché.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fas fa-home"></i>
+
+boiseries:
+  titre: Boiseries
+  subtitle: Entretiens et remise en état des boiseries
+  description: Entretiens et remise en état des boiseries.
+  picture: pictures/my_picture.jpg
+  icon: <i class="fas fa-tree"></i>
+
+

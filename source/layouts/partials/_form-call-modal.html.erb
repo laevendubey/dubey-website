@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div class="modal fade" id="formCallModal" tabindex="-1" role="dialog" aria-labelledby="formCallModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="formCallModalLabel">
+          Entrez vos coordonnées pour recevoir ma newsletter.
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Posting the form results on formspree / Remplacer le # par l'url formspree -->
+        <form id="formCall" action="#" method="POST">
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Email *" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="organization" class="form-control" placeholder="Evènement ou organisation *" required >
+          </div>
+          <!-- Redirect to thanks page after submitting / Remplacer https://monsite/thanks.html par l'url de la page de remerciement -->
+          <input type="hidden" name="_next" value="https://monsite/thanks.html"/>
+          <div class="text-center">
+            <button type="submit" class="btn-blue" id="form-submit">Call to action</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

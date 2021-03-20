@@ -1,0 +1,48 @@
+.ruban {
+  padding: 30px 0;
+}
+
+/* --- ruban light-blue --- */
+.ruban-light-blue {
+  background: $light-blue;
+}
+
+.ruban-light-blue-left {
+  background: linear-gradient(90deg, $light-blue 40%, $light-gray 40%);
+}
+
+.ruban-light-blue-right {
+  background: linear-gradient(90deg, $light-gray 60%, $light-blue 60%);
+}
+
+.ruban-light-blue-oblic-left {
+  background: linear-gradient(110deg, $light-blue 60%, $light-gray 60%);
+}
+
+.ruban-light-blue-oblic-right {
+  background: linear-gradient(110deg, $light-gray 60%, $light-blue 60%);
+}
+
+/* --- ruban blue --- */
+.ruban-blue {
+  background: $blue;
+}
+
+.ruban-blue-left {
+  background: linear-gradient(90deg, $blue 40%, $light-gray 40%);
+}
+
+.ruban-blue-right {
+  background: linear-gradient(90deg, $light-gray 60%, $blue 60%);
+}
+
+.ruban-blue-oblic-left {
+  background: linear-gradient(110deg, $blue 60%, $light-gray 60%);
+}
+
+.ruban-blue-oblic-right {
+  background: linear-gradient(110deg, $light-gray 60%, $blue 60%);
+  div {
+    background: white;
+  }
+}
