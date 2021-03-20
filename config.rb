@@ -50,7 +50,7 @@ activate :google_analytics do |ga|
 ga.tracking_id = 'UA-'
 end
 
-Middleman-deploy / Decommenter et remplacer ID et REPO par votre ID et repo gihub
+#Middleman-deploy / Decommenter et remplacer ID et REPO par votre ID et repo gihub
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.remote = 'https://github.com/leavendubey/dubey-website.git'
